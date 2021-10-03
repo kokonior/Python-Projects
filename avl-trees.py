@@ -26,7 +26,7 @@ class Node:
             return self.kanan.lookup(data, self)
         else:
             return self, parent
-
+    # memperbarui parents
     def refresh_parents(self):
         if self.kiri:
             self.kiri.parent = self
