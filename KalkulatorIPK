@@ -1,0 +1,71 @@
+print("Selamat datang di Kalkulator IPK!")
+jumlah_matkul       = int(input("Masukkan jumlah mata kuliah: "))
+# Menginisiasi variable dengan bilangan 0
+urutan_matkul       = 0
+total_sks           = 0
+total_nilai         = 0
+total_mutu          = 0
+mutu_lulus          = 0
+sks_lulus           = 0
+jumlah_bobot        = 0
+
+# Apabila input mata kuliah == 0 maka program akan berhenti.
+if jumlah_matkul == 0:
+    print("Tidak ada mata kuliah yang diambil.\n")
+    quit()
+# Apabila input mata kuliah < 0 maka program akan meminta untuk memasukkan jumlah kembali
+while jumlah_matkul < 0:
+    jumlah_matkul   = int(input("Masukkan jumlah mata kuliah: "))
+# Melakukan pengulangan sebanyak input yang diberikan user
+for jumlah_matkul in range(jumlah_matkul):
+    urutan_matkul   += 1
+    matkul          = str(input("\nMasukkan nama mata kuliah ke-" + str(urutan_matkul) + ": "))
+    matkul_sks      = int(input("Masukkan jumlah SKS " + matkul + ": "))
+    total_sks       += matkul_sks 
+    matkul_nilai    = float(input("Masukkan nilai yang kamu dapatkan: "))
+    while matkul_nilai < 0:
+        print("Nilai yang kamu masukkan tidak valid")
+        matkul_nilai= float(input("Masukkan nilai yang kamu dapatkan: "))
+    # Konversi nilai ke bobot serta keterangan lulus atau tidak lulus
+    if matkul_nilai >= 85:
+        bobot       = 4.00
+        keterangan  = "Lulus"
+    elif matkul_nilai >= 80 and matkul_nilai < 85:
+        bobot       = 3.70
+        keterangan  = "Lulus"
+    elif matkul_nilai >= 75 and matkul_nilai < 80:
+        bobot       =  3.30
+        keterangan  = "Lulus"
+    elif matkul_nilai >= 70 and matkul_nilai < 75:
+        bobot       =  3.00
+        keterangan  = "Lulus"
+    elif matkul_nilai >= 65 and matkul_nilai < 70:
+        bobot       =  2.70
+        keterangan  = "Lulus"
+    elif matkul_nilai >= 60 and matkul_nilai < 65:
+        bobot       =  2.30
+        keterangan  = "Lulus"
+    elif matkul_nilai >= 55 and matkul_nilai < 60:
+        bobot       =  2.00
+        keterangan  = "Lulus"
+    elif matkul_nilai >= 40 and matkul_nilai < 55:
+        bobot       = 1.00
+        keterangan  = "Tidak Lulus"
+    elif matkul_nilai >= 0 and matkul_nilai < 40:
+        bobot       =  0.00
+        keterangan  = "Tidak Lulus"
+    # Menambahkan setiap input kedalam masing-masing variable
+    total_mutu      += float(bobot) * float(matkul_sks)
+    jumlah_bobot    = total_mutu  
+
+    if keterangan == ("Lulus"):
+        mutu_lulus  += float(bobot) * float(matkul_sks)
+        sks_lulus   += matkul_sks
+# Rumus menghitung IPK dan IPT
+ipk         = mutu_lulus / sks_lulus
+ipt         = jumlah_bobot / total_sks
+# Mencetak serta memberikan output berdasarkan rumus
+print("\nJumlah SKS lulus :", "{:.2f}".format(float(sks_lulus)), "/", "{:.2f}".format(float(total_sks)))
+print("Jumlah mutu lulus:", "{:.2f}".format(float(mutu_lulus)), "/", "{:.2f}".format(float(jumlah_bobot)))
+print("Total IPK kamu adalah", "{:.2f}".format(float(ipk)))
+print("Total IPT kamu adalah", "{:.2f}".format(float(ipt)))
