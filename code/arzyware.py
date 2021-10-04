@@ -1,3 +1,9 @@
+import os
+import msvcrt as m
+
+def wait():
+    m.getch()
+
 print(" - Memanggil Fungsi - ")
 def greet():
     print("Charoo~")
@@ -51,7 +57,48 @@ print(kali(2))
 print(kali(5))
 print(kali(7))
 
-print(" - The Pass Statement - ")
-def pro():
-    pass
+os.system('cls')
+
+ans=True
+while ans:
+    print("""
+    Menu :
+    ------------
+
+    1.Luas Kubus
+    0.Exit/Quit
+    """)
+    ans=input("Apa yang ingin anda pilih? ")
+    os.system('cls')
+    if ans=="1":
+            print("""
+               o--------o
+              /        /|
+             /        / |
+            o--------o  |
+            |        |  o
+            |        | /
+            |        |/ 
+            o--------o""")
+            try:
+                s = int(input("Sisi : "))
+            except ValueError:
+                print("Hanya masukkan angka!")
+                wait()
+                continue
+            rumus = 6 * s * s
+            print("Hasil Luas Kubus adalah :",rumus)
+            print("\nTekan Enter...")
+            wait()
+            os.system('cls')
+        
     
+    elif ans=="0":
+      print("\nGoodbye") 
+      ans = None
+    else:
+      print("\nPilihan Tidak Ada Coba Lagi")
+      print("\nTekan Enter...")
+      wait()
+      os.system('cls')
+      ans = True
