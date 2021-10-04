@@ -8,7 +8,7 @@ for out in outs:
         class_id = np.argmax(scores)
         confidence = scores[class_id]
         if confidence > 0.5: #Accuracy
-            # Object detected
+            # Object detected / Deteksi Object
             center_x = int(detection[0] * width)
             center_y = int(detection[1] * height)
             w = int(detection[2] * width)
