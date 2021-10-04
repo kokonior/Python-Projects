@@ -57,6 +57,7 @@ print(kali(2))
 print(kali(5))
 print(kali(7))
 
+wait()
 os.system('cls')
 
 ans=True
@@ -66,6 +67,7 @@ while ans:
     ------------
 
     1.Luas Kubus
+    2.Vol Kubus
     0.Exit/Quit
     """)
     ans=input("Apa yang ingin anda pilih? ")
@@ -92,7 +94,29 @@ while ans:
             wait()
             os.system('cls')
         
-    
+    elif ans=="2":
+            print("""
+               o--------o
+              /        /|
+             /        / |
+            o--------o  |
+            |        |  o
+            |        | /
+            |        |/ 
+            o--------o""")
+            try:
+                s = int(input("Rusuk : "))
+            except ValueError:
+                print("Hanya masukkan angka!")
+                wait()
+                continue
+            rumus = s * s * s
+            print("Hasil Volume Kubus adalah :",rumus)
+            print("\nTekan Enter...")
+            wait()
+            os.system('cls')
+        
+      
     elif ans=="0":
       print("\nGoodbye") 
       ans = None
