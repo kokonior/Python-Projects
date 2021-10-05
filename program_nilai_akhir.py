@@ -6,7 +6,7 @@ nilai_uts = float(input("Masukkan nilai dari UTS : "))
 nilai_uas = float(input("Masukkan nilai dari UAS : "))
 nilai_akhir = (0.50 * nilai_tugas) + (0.30 * nilai_uts) + (0.20 * nilai_uas)
 #process
-if nilai_akhir >= 95
+if nilai_akhir >= 95:
     print(nilai_akhir)
     print("A+")
     print("Lulus")
