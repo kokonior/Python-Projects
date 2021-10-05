@@ -68,6 +68,7 @@ while ans:
 
     1.Luas Kubus
     2.Vol Kubus
+    3.Luas Balok
     0.Exit/Quit
     """)
     ans=input("Apa yang ingin anda pilih? ")
@@ -112,6 +113,21 @@ while ans:
                 continue
             rumus = s * s * s
             print("Hasil Volume Kubus adalah :",rumus)
+            print("\nTekan Enter...")
+            wait()
+            os.system('cls')
+
+    elif ans=="3":
+            try:
+                p = int(input("Panjang : "))
+                l = int(input("Lebar : "))
+                t =  int(input("Tinggi : ")) 
+            except ValueError:
+                print("Hanya masukkan angka!")
+                wait()
+                continue
+            rumus = 2 * (p*l+p*t+l*t)
+            print("Hasil Luas Balok adalah :",rumus)
             print("\nTekan Enter...")
             wait()
             os.system('cls')
