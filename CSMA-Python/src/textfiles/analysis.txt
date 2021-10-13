@@ -1,0 +1,285 @@
+
+-----------------------------------------------------------------------------
+	######## CHOSEN CSMA TECHNIQUE IS : ONE PERSISTENT METHOD ########
+-----------------------------------------------------------------------------
+
+
+
+********** 24/09/2021 20:41:22 SENDER-4 STATS **********
+*	Total packets: 13
+*	Total Delay: 56.48 secs
+*	Total collisions: 10
+*	Throughput: 0.565
+********************************************************
+
+
+
+
+********** 24/09/2021 20:41:26 SENDER-9 STATS **********
+*	Total packets: 13
+*	Total Delay: 60.41 secs
+*	Total collisions: 8
+*	Throughput: 0.619
+********************************************************
+
+
+
+
+********** 24/09/2021 20:41:35 SENDER-3 STATS **********
+*	Total packets: 13
+*	Total Delay: 69.87 secs
+*	Total collisions: 11
+*	Throughput: 0.542
+********************************************************
+
+
+
+
+********** 24/09/2021 20:41:58 SENDER-6 STATS **********
+*	Total packets: 13
+*	Total Delay: 92.72 secs
+*	Total collisions: 22
+*	Throughput: 0.371
+********************************************************
+
+
+
+
+********** 24/09/2021 20:42:06 SENDER-5 STATS **********
+*	Total packets: 13
+*	Total Delay: 100.55 secs
+*	Total collisions: 21
+*	Throughput: 0.382
+********************************************************
+
+
+
+
+********** 24/09/2021 20:42:09 SENDER-1 STATS **********
+*	Total packets: 13
+*	Total Delay: 104.02 secs
+*	Total collisions: 26
+*	Throughput: 0.333
+********************************************************
+
+
+
+
+********** 24/09/2021 20:42:11 SENDER-7 STATS **********
+*	Total packets: 13
+*	Total Delay: 106.0 secs
+*	Total collisions: 27
+*	Throughput: 0.325
+********************************************************
+
+
+
+
+********** 24/09/2021 20:42:15 SENDER-2 STATS **********
+*	Total packets: 13
+*	Total Delay: 109.4 secs
+*	Total collisions: 26
+*	Throughput: 0.333
+********************************************************
+
+
+
+
+********** 24/09/2021 20:42:17 SENDER-8 STATS **********
+*	Total packets: 13
+*	Total Delay: 111.48 secs
+*	Total collisions: 36
+*	Throughput: 0.265
+********************************************************
+
+
+
+-----------------------------------------------------------------------------
+	######## CHOSEN CSMA TECHNIQUE IS : NON PERSISTENT METHOD ########
+-----------------------------------------------------------------------------
+
+
+
+********** 24/09/2021 20:43:21 SENDER-7 STATS **********
+*	Total packets: 13
+*	Total Delay: 33.31 secs
+*	Total collisions: 4
+*	Throughput: 0.765
+********************************************************
+
+
+
+
+********** 24/09/2021 20:44:01 SENDER-1 STATS **********
+*	Total packets: 13
+*	Total Delay: 73.13 secs
+*	Total collisions: 9
+*	Throughput: 0.591
+********************************************************
+
+
+
+
+********** 24/09/2021 20:44:11 SENDER-2 STATS **********
+*	Total packets: 13
+*	Total Delay: 83.96 secs
+*	Total collisions: 14
+*	Throughput: 0.481
+********************************************************
+
+
+
+
+********** 24/09/2021 20:44:17 SENDER-6 STATS **********
+*	Total packets: 13
+*	Total Delay: 89.22 secs
+*	Total collisions: 15
+*	Throughput: 0.464
+********************************************************
+
+
+
+
+********** 24/09/2021 20:44:20 SENDER-4 STATS **********
+*	Total packets: 13
+*	Total Delay: 92.25 secs
+*	Total collisions: 18
+*	Throughput: 0.419
+********************************************************
+
+
+
+
+********** 24/09/2021 20:44:32 SENDER-5 STATS **********
+*	Total packets: 13
+*	Total Delay: 104.19 secs
+*	Total collisions: 25
+*	Throughput: 0.342
+********************************************************
+
+
+
+
+********** 24/09/2021 20:44:37 SENDER-3 STATS **********
+*	Total packets: 13
+*	Total Delay: 109.75 secs
+*	Total collisions: 27
+*	Throughput: 0.325
+********************************************************
+
+
+
+
+********** 24/09/2021 20:44:41 SENDER-9 STATS **********
+*	Total packets: 13
+*	Total Delay: 113.09 secs
+*	Total collisions: 32
+*	Throughput: 0.289
+********************************************************
+
+
+
+
+********** 24/09/2021 20:44:46 SENDER-8 STATS **********
+*	Total packets: 13
+*	Total Delay: 118.49 secs
+*	Total collisions: 33
+*	Throughput: 0.283
+********************************************************
+
+
+
+-----------------------------------------------------------------------------
+	######## CHOSEN CSMA TECHNIQUE IS : P PERSISTENT METHOD ########
+-----------------------------------------------------------------------------
+
+
+
+********** 24/09/2021 20:46:42 SENDER-3 STATS **********
+*	Total packets: 13
+*	Total Delay: 79.68 secs
+*	Total collisions: 1
+*	Throughput: 0.929
+********************************************************
+
+
+
+
+********** 24/09/2021 20:47:15 SENDER-9 STATS **********
+*	Total packets: 13
+*	Total Delay: 112.22 secs
+*	Total collisions: 0
+*	Throughput: 1.0
+********************************************************
+
+
+
+
+********** 24/09/2021 20:47:18 SENDER-1 STATS **********
+*	Total packets: 13
+*	Total Delay: 116.05 secs
+*	Total collisions: 3
+*	Throughput: 0.812
+********************************************************
+
+
+
+
+********** 24/09/2021 20:47:23 SENDER-7 STATS **********
+*	Total packets: 13
+*	Total Delay: 120.71 secs
+*	Total collisions: 2
+*	Throughput: 0.867
+********************************************************
+
+
+
+
+********** 24/09/2021 20:47:30 SENDER-8 STATS **********
+*	Total packets: 13
+*	Total Delay: 127.35 secs
+*	Total collisions: 4
+*	Throughput: 0.765
+********************************************************
+
+
+
+
+********** 24/09/2021 20:47:46 SENDER-5 STATS **********
+*	Total packets: 13
+*	Total Delay: 143.51 secs
+*	Total collisions: 5
+*	Throughput: 0.722
+********************************************************
+
+
+
+
+********** 24/09/2021 20:47:53 SENDER-6 STATS **********
+*	Total packets: 13
+*	Total Delay: 150.72 secs
+*	Total collisions: 1
+*	Throughput: 0.929
+********************************************************
+
+
+
+
+********** 24/09/2021 20:47:58 SENDER-2 STATS **********
+*	Total packets: 13
+*	Total Delay: 155.96 secs
+*	Total collisions: 5
+*	Throughput: 0.722
+********************************************************
+
+
+
+
+********** 24/09/2021 20:48:09 SENDER-4 STATS **********
+*	Total packets: 13
+*	Total Delay: 166.31 secs
+*	Total collisions: 2
+*	Throughput: 0.867
+********************************************************
+
+
