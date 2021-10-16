@@ -1,0 +1,51 @@
+{
+    "N":5, 
+    "class_time" :{
+        "0" : {
+            "start_hour" : 9,
+            "start_min" :10,
+            "end_hour":10,
+            "end_min" : 0 
+        },
+        "1" : {
+            "start_hour" : 10,
+            "start_min" :10,
+            "end_hour":11,
+            "end_min" : 0 
+        },
+        "2" : {
+            "start_hour" : 11,
+            "start_min" :10,
+            "end_hour":12,
+            "end_min" : 0 
+        },
+        "3" : {
+            "start_hour" : 13,
+            "start_min" :0,
+            "end_hour":13,
+            "end_min" : 50 
+        },
+        "4" : {
+            "start_hour" : 14,
+            "start_min" :0,
+            "end_hour":14,
+            "end_min" : 50 
+        }
+
+    },
+
+    "Week":{
+        "0":["English","English","Chemistry","Physics","Physics"],
+        "1":["English","Chinese","English","Chemistry","Chemistry"],
+        "2":["Chinese","English","Math","Physics","Physics"],
+        "3":["Math","Math","Physics","Chinese","Chinese"],
+        "4":["Math","Chemistry","Chinese","Math","NULL"]
+    },
+    "subject":{
+        "Chinese" : "C004" ,
+        "English" : "E009" ,
+        "Math" : "M014" ,
+        "Chemistry" : "N022" ,
+        "Physics" : "N008" 
+    }
+}
