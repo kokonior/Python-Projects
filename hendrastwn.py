@@ -20,7 +20,7 @@ for out in outs:
 
             boxes.append([x, y, w, h])
             confidences.append(float(confidence))
-            class_ids.append(class_id)
+         
 
 # Index Open Source Computer Vision Library
 indexes = cv2.dnn.NMSBoxes(boxes, confidences, 0.5, 0.4)
