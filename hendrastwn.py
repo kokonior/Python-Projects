@@ -14,7 +14,7 @@ for out in outs:
             w = int(detection[2] * width)
             h = int(detection[3] * height)
 
-            # Rectangle coordinates
+            # Rectangle coordinates / Koordinat Persegi Panjang
             x = int(center_x - w / 2)
             y = int(center_y - h / 2)
 
@@ -22,10 +22,33 @@ for out in outs:
             confidences.append(float(confidence))
             class_ids.append(class_id)
 
+# Index Open Source Computer Vision Library
 indexes = cv2.dnn.NMSBoxes(boxes, confidences, 0.5, 0.4)
 print(indexes)
 font = cv2.FONT_HERSHEY_SIMPLEX
 
+[net]
+batch=64
+subdivisions=8
+# Training
+#width=512
+#height=512
+width=320
+height=320
+channels=3
+momentum=0.949
+decay=0.0005
+angle=0
+saturation = 1.5
+exposure = 1.5
+hue=.1
+
+learning_rate=0.0013
+burn_in=1000
+max_batches = 500500
+policy=steps
+steps=400000,450000
+scales=.1,.1
 
 for i in range(len(boxes)):
     if i in indexes: 
