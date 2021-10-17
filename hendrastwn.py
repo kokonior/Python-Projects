@@ -37,6 +37,22 @@ for i in range(len(boxes)):
         cv2.rectangle(img, (x, y), (x + w, y + h), color, 2)
         cv2.putText(img, label, (x, y+30), font, 1, color, 2)
 
+        
+        #Load YOLO Algorithms\
+net=cv2.dnn.readNet("yolov3.weights","yolov3.cfg")
+#To load all objects that have to be detected
+classes=[]
+with open("coco.names","r") as f:
+    read=f.readlines()
+for i in range(len(read)):
+    classes.append(read[i].strip("\n"))
+#Defining layer names
+layer_names=net.getLayerNames()
+output_layers=[]
+for i in net.getUnconnectedOutLayers():
+    output_layers.append(layer_names[i[0]-1])
+        
+        
 cv2.imshow("Image", img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
