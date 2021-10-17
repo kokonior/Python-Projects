@@ -22,6 +22,7 @@ for out in outs:
             confidences.append(float(confidence))
             class_ids.append(class_id)
 
+# Index Open Source Computer Vision Library
 indexes = cv2.dnn.NMSBoxes(boxes, confidences, 0.5, 0.4)
 print(indexes)
 font = cv2.FONT_HERSHEY_SIMPLEX
