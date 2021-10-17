@@ -14,7 +14,7 @@ for out in outs:
             w = int(detection[2] * width)
             h = int(detection[3] * height)
 
-            # Rectangle coordinates
+            # Rectangle coordinates / Koordinat Persegi Panjang
             x = int(center_x - w / 2)
             y = int(center_y - h / 2)
 
