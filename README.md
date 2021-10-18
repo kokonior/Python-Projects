@@ -11,5 +11,4 @@ Please make sure to update tests as appropriate.
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 
-hacktoberfest 2021
-hacktober
+hacktoberfest16october2021
