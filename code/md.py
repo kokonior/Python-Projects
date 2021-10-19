@@ -8,3 +8,7 @@ def md_to_text(md):
 
 def reformattext(text):
     return text.replace("~","").replace("_","").replace("*","").replace("`","")
+
+def parse_pre(text):
+    text = text.strip()
+    return (text, [MessageEntityPre(offset=0, length=len(add_surrogate(text)), language="")],)
