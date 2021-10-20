@@ -1,0 +1,3 @@
+pycaret==2.2.3
+joblib==0.16.0
+streamlit==0.73.1
