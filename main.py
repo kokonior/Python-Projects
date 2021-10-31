@@ -8,7 +8,7 @@ def intro():
     elif nama == "Shofa":
         print("Hi, Iloveyou <3")
     else:
-        print("Gausah bohong")
+        print("Gausah bohong ya kamu")
 
 intro()
 
@@ -47,7 +47,7 @@ apolo()
 
 def balikan():
     
-    print("Shofa masih aya rasa keneh teu ka Salman?")
+    print("Kamu masih  rasa keneh teu ka Salman?")
     print("Mun aya Salman hayang siga dulu deui")
     print("Tapi lamun shofa tos balikan deui jeung si itu mah mangga")
     print("Keputusan aya di tangan Shofa")
