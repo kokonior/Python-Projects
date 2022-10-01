@@ -1,4 +1,7 @@
 import requests
+from colorama import init, Fore
+
+init(autoreset=True)
 
 def autochat(message):
     
@@ -11,8 +14,8 @@ def autochat(message):
 def main():
     
     while True:
-        message = input('You: ')
-        print('Bot: ', autochat(message))
+        message = input(Fore.GREEN + 'You : ')
+        print(Fore.BLUE + 'Bot : ' + autochat(message))
     
     
 if __name__ == '__main__':
