@@ -1,4 +1,17 @@
-!pip install qrcode #install qrcode package from PyPi
-import qrcode    #import qrcode
-img=qrcode.make("https://youtu.be/Xh_jQPz7PIw") #desired link
-img.save("project_vid_qr.jpg") #save it with your desired file-name.jpg
+# requirements
+# pip install qrcode
+# pip install pillow
+import qrcode
+
+# Creating a QR code object.
+qr = qrcode.QRCode(
+    version=1,
+    error_correction=qrcode.constants.ERROR_CORRECT_L,
+    box_size=10,
+    border=4,
+)
+# Taking the input from the user and converting it into a QR code.
+qr.add_data(str(input("Enter the text to be converted to QR code: ")))
+qr.make(fit=True)
+img = qr.make_image(fill_color="black", back_color="white")
+img.save("qrcode.png")
