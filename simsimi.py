@@ -5,7 +5,7 @@ init(autoreset=True)
 
 def autochat(message):
     
-    req = requests.get(f'https://dkmpostor-auto-chat.herokuapp.com/autochat?message={message}&lang=en')
+    req = requests.get(f'https://dkmpostor-auto-chat.herokuapp.com/autochat?message={message}&lang=id')
     res = req.json()
     
     if res['statusCode'] == 200:
