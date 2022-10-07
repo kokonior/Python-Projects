@@ -4,7 +4,15 @@ import pygame
 from pygame.color import THECOLORS as COLORS
 from pygame.locals import *
 
+def draw_background():
+    # white background
+    screen.fill(COLORS['white'])
+    pygame.draw.rect(screen,COLORS['black'],(-100,GAME_SIZE[1],3000,200),0)
 
+def draw_wall():
+    for xy in wall_list:
+        pygame.draw.rect(screen,COLORS['darkgray'],(xy[0]-WALL_WIDTH/2,xy[1]-WALL_WIDTH/2,WALL_WIDTH,WALL_HEIGHT),0)
+        
 def draw_pause():
     s = pygame.Surface(SIZE, pygame.SRCALPHA)
     s.fill((255,255,255,220))
