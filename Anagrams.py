@@ -1,3 +1,4 @@
+print('ANAGRAM')
 from collections import *
 a=Counter(input())
 b=Counter(input())
