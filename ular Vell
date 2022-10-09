@@ -13,6 +13,22 @@ def draw_wall():
     for xy in wall_list:
         pygame.draw.rect(screen,COLORS['darkgray'],(xy[0]-WALL_WIDTH/2,xy[1]-WALL_WIDTH/2,WALL_WIDTH,WALL_HEIGHT),0)
         
+       def draw_snake():
+    head = snake_list[0]
+    pygame.draw.circle(screen,COLORS['darkred'],(head[0],head[1]),int(SNAKE_WIDTH/2),0)
+    for xy in snake_list[1:]:
+        pygame.draw.rect(screen,COLORS['darkred'],(xy[0]-SNAKE_WIDTH/2,xy[1]-SNAKE_WIDTH/2,SNAKE_WIDTH,SNAKE_HEIGHT),2)
+
+def draw_food():
+    for xyz in food_list:
+        pygame.draw.rect(screen,FOOD_COLORS[xyz[2]-1],(xyz[0]-FOOD_WIDTH/2,xyz[1]-FOOD_WIDTH/2,FOOD_WIDTH,FOOD_HEIGHT),0)
+
+def draw_context():
+    txt = FONT_M.render('Snake length: '+str(len(snake_list)-1),True,COLORS['lightblue'])
+    x,y = 10,GAME_SIZE[1]+(int((SIZE[1]-GAME_SIZE[1])/2))
+    y = int(y-FONT_M.size('Count')[1]/2)
+    screen.blit(txt,(x,y))
+    
 def draw_pause():
     s = pygame.Surface(SIZE, pygame.SRCALPHA)
     s.fill((255,255,255,220))
