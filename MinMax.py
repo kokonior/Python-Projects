@@ -3,6 +3,7 @@ class Problem:
     def __init__(self):
         # it a tree that is represented in the form of nested dictionary
         # where every key represents a node having child and last nodes
+        #Hacktoberfest2022
         # without child are represented in a list
         # First symmetrical tree with each node having 2 children
         """self.tree = {
