@@ -32,4 +32,5 @@ By default the app retrieves EUR rates and shows conversions to this base curren
 it will retrieve all data again for that new currency. This is daft, since if we have rates vs. EUR we can calculate
 any other currency->currency conversion via EUR (with a small loss of accuracy).
 
+hacktoberfest 2022
 
