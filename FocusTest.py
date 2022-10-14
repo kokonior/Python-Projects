@@ -1,13 +1,13 @@
 import time, random
 
-print ("Ready?")
+print("Ready?")
 
-time.sleep(random.randint(1,5))
+time.sleep(random.randint(1, 5))
 
 a = time.time()
 
-input('ENTER NOW!')
+input("ENTER NOW!")
 
 x = time.time()
 
-print (f"your time: {x-a}s")
+print(f"your time: {x-a}s")
