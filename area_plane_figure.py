@@ -1,17 +1,17 @@
-#program to calculate the area of plane figure
+# program to calculate the area of plane figure
 print("Program Menghitung Luas Bangun Datar (dalam cm)")
 print("1.Persegi")
 print("2.Persegi Panjang")
 print("3.Segitiga")
 print("4.Layang-Layang atau Belah Ketupat")
 print("5.Trapesium")
-#input name of plane figure
+# input name of plane figure
 bangundatar = input("Masukkan nama bangun datar yang ingin dihitung :")
-#process
+# process
 if bangundatar == "1":
     sisi = float(input("Masukkan sisinya :"))
     luas = sisi * sisi
-#output of area
+    # output of area
     print("Luas bangunan tersebut adalah " + str(luas))
 else:
     if bangundatar == "2":
@@ -41,5 +41,5 @@ else:
                         luas = (sisialas + sisibawah) * (tinggi / 2)
                     else:
                         print("ERROR, MASUKKAN BANGUN DATAR YANG VALID")
-#output of area
-    print("Luas bangunan tersebut adalah : " + str(luas) + " cm" )
+    # output of area
+    print("Luas bangunan tersebut adalah : " + str(luas) + " cm")
