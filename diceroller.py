@@ -1,8 +1,7 @@
-print ("Welcome to DICE ROLL")
+print("Welcome to DICE ROLL")
 
 
 import random
-
 
 
 while True:
@@ -11,7 +10,7 @@ while True:
         break
 
     print("The dice is rolling...")
-    num = random.randint(1,6)
+    num = random.randint(1, 6)
     if num == 1:
         print("|----------|")
         print("|          |")
@@ -35,7 +34,7 @@ while True:
         print("|          |")
         print("|----------|")
         print("You got 3")
-    
+
     if num == 4:
         print("|----------|")
         print("|  0     0 |")
@@ -59,19 +58,3 @@ while True:
         print("|  0     0 |")
         print("|----------|")
         print("You got 6")
-
-
-
-        
-    
-
-
-    
-
-
-        
-        
-
-
-
-
