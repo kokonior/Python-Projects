@@ -1,48 +1,56 @@
-#Febrian Ardi Pangestu 21060119130125
-#program parkir
+# Febrian Ardi Pangestu 21060119130125
+# program parkir
 def resetbiayaparkir():
     global biayaparkir
-    biayaparkir=0
+    biayaparkir = 0
+
+
 def punyavoc():
-    global vocnya,punyavocnya
-    vocnya=str(input("Punya voc? (ya/tidak): "))
+    global vocnya, punyavocnya
+    vocnya = str(input("Punya voc? (ya/tidak): "))
     if vocnya == "ya":
         punyavocnya = 1
     else:
         punyavocnya = 0
+
+
 def inputjam():
-    global jammasuk,jamkeluar,biayahari,biayaparkir,hitungjam
+    global jammasuk, jamkeluar, biayahari, biayaparkir, hitungjam
     print("input jam dengan format 24jam, hanya 2 digit jam pertama")
-    jammasuk=int(input("Jam masuk:"))
-    jamkeluar=int(input("Jam keluar:"))
-    if (jamkeluar<jammasuk):
-        jamkeluar=jamkeluar+24
+    jammasuk = int(input("Jam masuk:"))
+    jamkeluar = int(input("Jam keluar:"))
+    if jamkeluar < jammasuk:
+        jamkeluar = jamkeluar + 24
     else:
-        jamkeluar=jamkeluar
-    if (jamkeluar-jammasuk)>12:
+        jamkeluar = jamkeluar
+    if (jamkeluar - jammasuk) > 12:
         punyavoc()
-        if punyavocnya==1:
-            biayaparkir=biayaparkir+10000
+        if punyavocnya == 1:
+            biayaparkir = biayaparkir + 10000
         else:
-            biayaparkir=biayaparkir+20000
+            biayaparkir = biayaparkir + 20000
     else:
-        hitungjam=jamkeluar-jammasuk-2
-        if hitungjam<0:
-            hitungjam=0
+        hitungjam = jamkeluar - jammasuk - 2
+        if hitungjam < 0:
+            hitungjam = 0
         else:
-            hitungjam=hitungjam
-        biayaparkir=2000+1000*(hitungjam)
-    print("Parkir salama:",(jamkeluar-jammasuk),"jam")
-    print("Biaya parkir:",biayaparkir)
+            hitungjam = hitungjam
+        biayaparkir = 2000 + 1000 * (hitungjam)
+    print("Parkir salama:", (jamkeluar - jammasuk), "jam")
+    print("Biaya parkir:", biayaparkir)
     print("")
+
+
 def fungsiutama():
     resetbiayaparkir()
     inputjam()
     resetbiayaparkir()
     fungsiutama()
+
+
 fungsiutama()
-        
-'''
+
+"""
 output
 input jam dengan format 24jam, hanya 2 digit jam pertama
 Jam masuk:1
@@ -107,4 +115,4 @@ Jam keluar:14
 Punya voc? (ya/tidak): tidak
 Parkir salama: 14 jam
 Biaya parkir: 20000
-'''
+"""
