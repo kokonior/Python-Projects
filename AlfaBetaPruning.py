@@ -2,34 +2,33 @@ import math
 
 
 class Problem:
-
     def __init__(self):
         # it a tree that is represented in the form of nested dictionary
         # where every key represents a node having child and last nodes
         # without child are represented in a list
 
         """self.tree = {
-                    'A': {
-                        'B': {
-                            'D':
-                                [3, 8]
-                            ,
-                            'E':
-                                [6, 4]
+            'A': {
+                'B': {
+                    'D':
+                        [3, 8]
+                    ,
+                    'E':
+                        [6, 4]
 
-                        },
-                        'C': {
-                            'F':
-                                [2, 3]
-                            ,
-                            'G':
-                                [1, 2]
+                },
+                'C': {
+                    'F':
+                        [2, 3]
+                    ,
+                    'G':
+                        [1, 2]
 
-                        }
-                    }
-                }"""
+                }
+            }
+        }"""
         # Second symmetrical tree with each node having 3 children
-        '''self.tree = {
+        """self.tree = {
             'A': {
                 'B': {
                     'E':[3, 8, 4]
@@ -59,7 +58,7 @@ class Problem:
 
                 }
             }
-        }'''
+        }"""
         # third unsymmetrical tree with different number of children
         # that looks like this
         #         A
@@ -70,24 +69,15 @@ class Problem:
         #   |   /\   |  / \  / | \
         #   5   3 6  9  2 0  9 8 4
         self.tree = {
-            'A': {
-                'B': {
-                    'D': [5]
-                    ,
-                    'E': [3, 6]
-                },
-                'C': {
-                    'F': [9]
-                    ,
-                    'G': [2, 0]
-                    ,
-                    'H': [9, 8, 4]
-
-                }
+            "A": {
+                "B": {"D": [5], "E": [3, 6]},
+                "C": {"F": [9], "G": [2, 0], "H": [9, 8, 4]},
             }
         }
 
-    def apply_alpha_beta_pruning(self, current_subtree=None, min_max_chose=max, alpha=-math.inf, beta=math.inf):
+    def apply_alpha_beta_pruning(
+        self, current_subtree=None, min_max_chose=max, alpha=-math.inf, beta=math.inf
+    ):
         """
         Recursive function that gets a tree stored as dictionary
         and calls itself recursively to apply min max on the sub-tree
@@ -103,7 +93,7 @@ class Problem:
 
         if current_subtree is None:
             current_subtree = self.tree
-            print('Alpha Beta Pruning Started')
+            print("Alpha Beta Pruning Started")
         # list that contains integers that are returned from next recursive scope.
         # is a min or max of child nodes.
         returned_values = list()
@@ -133,7 +123,9 @@ class Problem:
         available_keys = current_subtree.keys()
         # we iterate over these keys to get child subtrees
         for key in available_keys:
-            value = self.apply_alpha_beta_pruning(current_subtree[key], min_max_chose, alpha, beta)
+            value = self.apply_alpha_beta_pruning(
+                current_subtree[key], min_max_chose, alpha, beta
+            )
             returned_values.append(value)
             if min_max_chose == max:
                 alpha = max([alpha, value])
@@ -144,8 +136,10 @@ class Problem:
             if beta <= alpha:
                 print(f"Pruned alpha {alpha}, beta {beta}")
                 break
-        print(f"Values {returned_values} are returned to {'max' if min_max_chose == min else 'min'} scope"
-              f"and alpha= {alpha}, beta={beta}")
+        print(
+            f"Values {returned_values} are returned to {'max' if min_max_chose == min else 'min'} scope"
+            f"and alpha= {alpha}, beta={beta}"
+        )
         # return min or max depending on which scope it is.
         return min_max_chose(returned_values)
 
@@ -155,5 +149,5 @@ def main():
     print(p.apply_alpha_beta_pruning())
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
