@@ -12,14 +12,13 @@ def is_prime(num):
 
 # To run the code, just enter "python is_prime.py <num>" replacing <num> by any integer
 # Example: python is_prime.py 11
-if __name__ == '__main__':
+if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print('Please inform a number')
+        print("Please inform a number")
     else:
         num = int(sys.argv[1])
 
         if is_prime(num):
-            print(f'{num} is prime!')
+            print(f"{num} is prime!")
         else:
-            print(f'{num} is NOT prime!')
-
+            print(f"{num} is NOT prime!")
