@@ -11,7 +11,7 @@ class Customer:
                 self.purchases.append(product)
                 inventory_dict[product] -= 1
             else:
-                print('We are out of stock!')
+                print("We are out of stock!")
         else:
             print("We don't have that product!")
 
@@ -39,19 +39,19 @@ class Inventory:
 
     def print_inventory(self):
         for key, value in self.inventory.items():
-            print(key.name + ':' + str(value))
+            print(key.name + ":" + str(value))
         print()
 
 
-customer = Customer('Joe', 'joe@gmail.com')
+customer = Customer("Joe", "joe@gmail.com")
 print(customer.name)
 print(customer.email)
 
-apple_watch = Product('Apple Watch', 299)
+apple_watch = Product("Apple Watch", 299)
 print(apple_watch.name)
 print(apple_watch.price)
 
-mac = Product('Mac', 1999)
+mac = Product("Mac", 1999)
 print(mac.name)
 print(mac.price)
 
