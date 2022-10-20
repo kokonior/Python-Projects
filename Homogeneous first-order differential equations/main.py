@@ -1,3 +1,6 @@
+# Fungsi Diferensial: dy/dx=(x+3*y)/(2*x) when x=1 and y=1 
+# Menggunakan Metode Euler
+
 import matplotlib.pyplot as plt, numpy as np 
 def func(y,x): 
     return (x+3*y)/(2*x) 
