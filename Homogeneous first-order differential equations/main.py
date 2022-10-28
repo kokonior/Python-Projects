@@ -1,15 +1,15 @@
-# Fungsi Diferensial: dy/dx=(x+3*y)/(2*x) when x=1 and y=1 
-# Menggunakan Metode Euler
+# Differential Function: dy/dx=(x+3*y)/(2*x) with input x and y
+# Using Euler's Method
 
 import matplotlib.pyplot as plt, numpy as np 
 def func(y,x): 
     return (x+3*y)/(2*x)
 
 # Initial Condition
-y0 = 1 
-x0 = 1 
+y0 = int(input("Enter the value of y: ")) 
+x0 = int(input("Enter the value of x: "))
 
-# Proses diskritisasi
+# Discretization process
 ndata = 6 
 xn = 0.2 
 x = np.linspace(x0,xn,ndata) 
@@ -22,7 +22,7 @@ for i in range(0,ndata-1):
 #plot    
 plt.plot(x,y,marker='x',color='black')
 
-#Plot Judul
+#Plot Title
 plt.title("(Your Title)") 
 plt.xlabel("Axis X")
 
