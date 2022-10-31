@@ -1,9 +1,18 @@
-# Differential Function: dy/dx=(x+3*y)/(2*x) with input x and y
+# differential function app: dy/dx=(x+a*y)/(b*x) with input x and y
 # Using Euler's Method
 
 import matplotlib.pyplot as plt, numpy as np 
+
+# Description
+print ("differential function app: dy/dx=(x+a*y)/(b*x) with input x and y")
+print ("Using Euler's Method")
+
+# Initial Condition a,b
+a = int(input("Enter the value of a: ")) 
+b = int(input("Enter the value of b: ")) 
+
 def func(y,x): 
-    return (x+3*y)/(2*x)
+    return (x+a*y)/(b*x)
 
 # Initial Condition
 y0 = int(input("Enter the value of y: ")) 
@@ -23,7 +32,8 @@ for i in range(0,ndata-1):
 plt.plot(x,y,marker='x',color='black')
 
 #Plot Title
-plt.title("(Your Title)") 
+t = str(input("Input your title: ")) 
+plt.title(t) 
 plt.xlabel("Axis X")
 
 #Plot Label
