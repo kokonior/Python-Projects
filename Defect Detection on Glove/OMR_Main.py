@@ -36,7 +36,12 @@ STACK_IMG_SIZE = (200, 200)
 ################################
 
 while True:
-    files = os.listdir('images')
+    # Construct the absolute path to the 'images' directory
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    images_dir = os.path.join(script_dir, 'images')
+
+    # List the files in the 'images' directory
+    files = os.listdir(images_dir)
     print("======================================")
     print("=         Available Images           =")
     print("======================================")
@@ -50,11 +55,17 @@ while True:
     file = input("Select a file from the directory(q- quit): ").strip()
 
     # quit program
-    if file == 'q' or file == 'Q':
+    if file.lower()=='q':
         break
 
-    PATH = 'images/' + file
-    # Image Path
+    #check if the input file exists in 'images' directory
+    if file not in files:
+        print("File is not found in images directory!")
+        continue
+
+    PATH = os.path.join(images_dir,file)
+    
+    #image path
     imageOri = cv2.imread(PATH)
 
     try:
